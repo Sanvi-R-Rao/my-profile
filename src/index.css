@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 :root {
-    --primary: #1B4F72;
-    --accent: #F18F01;
-    --text: #2C3E50;
-    --light: #F4F6F8;
-    --white: #FFFFFF;
+    --primary: #3b2a20;
+    --accent: #c76b3c;
+    --text: #3a3028;
+    --light: #f7f1e8;
+    --white: #fff971;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
