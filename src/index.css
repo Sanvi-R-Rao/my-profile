@@ -7,7 +7,7 @@
 :root {
   --primary: #0f172a;       /* Deep navy/slate background */
   --accent: #38bdf8;        /* Bright electric cyan highlight */
-  --text: #e2e8f0;          /* Clean light text for contrast */
+  --text: #1f2937;          /* Clean light text for contrast */
   --light: #1e293b;         /* Dark card/container background */
   --white: #ffffff;         /* Pure white for headings/emphasis */
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
