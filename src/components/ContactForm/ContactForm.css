@@ -1,28 +1,32 @@
 /* === CONTACT FORM === */
 .contact-section{
-    background: var(--light);
+    background: var(--surface);
 }
 
 .form-group{
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .form-group label{
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: var(--primary);
+    font-size: 0.95rem;
+    color: var(--heading);
 }
 
 .form-group input,
 .form-group textarea,
 .form-select{
     width: 100%;
-    padding: 14px 16px;
-    border: 2px solid #DDD;
+    padding: 12px 16px;
+    background-color: var(--primary);
+    color: var(--heading);
+    border: 2px solid var(--border);
     border-radius: 8px;
     font-size: 1rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s ease;
 }
 .form-group.invalid label {
     color: #c53030;
@@ -44,11 +48,11 @@
 .form-error {
     margin-top: 8px;
     color: #c53030;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .form-success {
-    margin-top: 18px;
+    margin-top: 16px;
     color: #1d6a20;
     font-weight: 600;
 }
