@@ -1,7 +1,9 @@
 /* === FOOTER === */
 .site-footer{
-    background: var(--primary);
-    color: rgba(255, 255, 255, 0.8);
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    color: var(--text);
     text-align: center;
-    padding: 40px 5%;
+    padding: 30px 5%;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }

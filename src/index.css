@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 :root {
-  --primary: #0f172a;       /* Deep navy/slate background */
-  --accent: #38bdf8;        /* Bright electric cyan highlight */
-  --text: #1f2937;          /* Clean light text for contrast */
-  --light: #1e293b;         /* Dark card/container background */
-  --white: #ffffff;         /* Pure white for headings/emphasis */
+  --primary: #f8fafc;    
+  --surface: #ffffff;     
+  --text: #334155;       
+  --heading:#0f172a;   
+  --accent:#0284c7; 
+  --border:#e2e8f0;
+  --btn-text:#ffffff;     
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* === SECTION STYLES === */
@@ -34,8 +36,13 @@ section h2::after{
 }
 /* 3. Dark Mode Global Overrides */
 body[data-theme="dark"] {
-    background: #121212;
-    color: #f5f5f5;
+    --primary: #0f172a;
+    --surface: #1e293b;
+    --text: #94a3b8;
+    --heading: #f8fafc;
+    --accent: #38bdf8;
+    --border: #334155;
+    --btn-text: #0f172a;
 }
 /* Header */
 body[data-theme="dark"] .site-header,
@@ -212,10 +219,11 @@ body {
     font-family: var(--font-main);
     color: var(--text);
     line-height: 1.6;
-    background-color: var(--white);
+    background-color: var(--primary);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .app-shell {
@@ -347,7 +355,7 @@ color: var(--primary);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
-  border: 6px solid var(--accent);
+  border: none;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -371,4 +379,83 @@ color: var(--primary);
   .about-image {
     margin-bottom: 25px;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
+  transition: color 0.3s ease;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--heading);
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Button & Filter Base Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--btn-text) !important;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--heading);
+  border-color: var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  color: var(--text);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--btn-text);
 }
