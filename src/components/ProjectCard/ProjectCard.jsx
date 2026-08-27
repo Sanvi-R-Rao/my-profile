@@ -12,7 +12,15 @@ function ProjectCard({ project }) {
                   <span key={index} className='tag'>{t}</span>
                 ))}
               </div>
-              <button className='btn btn-primary'>View Project</button>
+              <a 
+              href={project.liveUrl || project.githubUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary"
+              style={{ textDecoration: 'none', textAlign: 'center', marginTop: 'auto' }}
+              >
+                View Project
+              </a>
         </div>
       </article>
   )

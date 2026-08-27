@@ -10,7 +10,7 @@ export const projectsData = [
     tech: ['HTML', 'CSS'],
     category: 'web',
     featured: true,
-    liveUrl: '#',
+    liveUrl: 'https://github.com/Sanvi-R-Rao/amazon-clone',
     githubUrl: 'https://github.com/Sanvi-R-Rao/amazon-clone',
   },
 ];
