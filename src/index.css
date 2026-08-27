@@ -263,13 +263,13 @@ transition: all 0.3s ease;
 
 .btn-primary {
 background: var(--accent);
-color: var(--white);
+color: #fff;       
+border: none;
+transition: opacity 0.2s;
 }
 
 .btn-primary:hover {
-background: transparent;
-color: var(--accent);
-border-color: var(--accent);
+opacity: 0.5;
 }
 
 .btn-secondary {
