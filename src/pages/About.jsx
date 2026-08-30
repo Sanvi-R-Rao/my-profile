@@ -7,7 +7,8 @@ const SKILLS = [
   { name: 'HTML', level: 'Advanced', icon: '🌐' },
   { name: 'CSS', level: 'Advanced', icon: '🎨' },
   { name: 'JavaScript', level: 'Advanced', icon: '⚡' },
-  { name: 'React', level: 'Intermediate', icon: '⚛️' }
+  { name: 'React', level: 'Intermediate', icon: '⚛️' },
+  { name: 'Git & GitHub', level: 'Intermediate', icon: '🛠️' }
 ];
 
 function About() {
